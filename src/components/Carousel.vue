@@ -12,6 +12,9 @@
         "url('./src/assets/2.jpg')",
         "url('./src/assets/1.jpg')",
         "url('./src/assets/3.jpg')",
+        "url('./src/assets/4.jpg')",
+        "url('./src/assets/5.jpg')",
+        "url('./src/assets/cars6.jpg')",
     ]
 
     const keyWords = [
@@ -100,27 +103,53 @@
 
 
 <template>
-    <main class="bkg text-white absolute inset-0  right-0 w-screen overflow-x-hidden h-screen" :style="{'background-image': images[index]}" >
-        <div class="absolute top-0 right-0 bg-black opacity-70 h-screen w-screen">
-            <!-- Content of the carousel -->
-        </div>
-            <div class="absolute  right-0 top-0  flex items-center  h-screen w-screen">
+    <main class="bkg hidden sm:block text-white relative inset-0  right-0 w-screen overflow-x-hidden h-screen" :style="{'background-image': images[index]}" >
+        <div class="bg-black opacity-80 h-screen w-screen">
+            <div class=" right-0 top-0 flex items-center  h-screen w-screen">
+                
                
-                <div class="w-10/12 relative flex  justify-between items-center  mx-auto h-full">
+
+                <div class="w-11/12 md:w-10/12  flex  justify-between items-center  mx-auto h-full">
                     
-                    <div class="w-5/12 flex-col justify-center items-start">
-                        <h1 class="hero text-3xl border-l-black">ROBLAS supply chain management</h1>
-                        <p class="mt-4 hero">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi doloribus dignissimos delectus laborum vero minus aperiam maiores non facilis dolores, ut, perspiciatis rerum ullam culpa iure. Cumque fugiat commodi molestias!
-                            <strong id="hero-text"  class="hero-text text-2xl font-bold text-blue-600 uppercase">
+                    <div class=" md:w-7/12  flex-col justify-center items-start">
+                        <p class="hero text-7xl  font-bold text-indigo-600">ROBLAS supply chain management</p>
+                        <p class="mt-4 hero  text-lg">
+                            Discover Roblas Supply Chain Management Pty Ltd, your trusted partner for a diverse range of exceptional products. From tiles to cars, agriculture tools to security systems, we deliver quality and value. With expertise in agro food commodities, we ensure constant supply and competitive prices. Plant the seeds of success with us today.
+                            <!-- <strong id="hero-text"  class="hero-text text-2xl font-bold text-blue-600 uppercase">
                                 {{ keyWords[word] }}
-                            </strong>
+                            </strong> -->
                         </p>
+                        <div class="w-44 bg-indigo-600 text-lg font-semibold rounded-md mt-3 flex justify-center items-center py-3 space-x-4">
+                            <p><a href="#contact">Let's talk</a></p>
+                            <i class="fa-solid fa-arrow-right text-lg"></i>
+                        </div>
                     </div>
                 </div>
               
+        </div>            
         </div>
+            
     </main> 
+
+
+    <main class=" sm:hidden  h-full text-white relative inset-0  right-0 w-screen overflow-x-hidden">
+        <video class=" md:hidden" autoplay muted loop id="myVideo">
+            <source src="src/assets/phoneHero.mp4" type="video/mp4">
+          </video>
+
+          <section class="bg-black/80 absolute w-screen h-full flex flex-col items-center justify-center top-0 right-0">
+            <div class="w-11/12 mx-auto">
+                <p class="hero text-xl font-bold text-indigo-600 ">ROBLAS supply chain management</p>
+            <p class="mt-4 hero text-justify ">
+               Discover Roblas Supply Chain Management Pty Ltd, your trusted partner for a diverse range of exceptional products. From tiles to cars, agriculture tools to security systems, we deliver quality and value. With expertise in agro food commodities, we ensure constant supply and competitive prices. Plant the seeds of success with us today.
+                <!-- <strong id="hero-text"  class="hero-text text-2xl font-bold text-blue-600 uppercase">
+                    {{ keyWords[word] }}
+                </strong> -->
+            </p>
+            </div>
+          </section>
+         
+    </main>
 </template>
 
 
@@ -129,11 +158,20 @@
        
         background-repeat: no-repeat;
         background-size: cover;
-
     }
+
+
 
     h1 {
         opacity: 0;
         transform: translateY(10px);
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .bkg {
+          background-color:white !important;
+          background-size: cover;
+        }
       }
 </style>
