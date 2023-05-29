@@ -2,12 +2,26 @@
 import Nav from '../components/Nav.vue'
 import Carousel from '../components/Carousel.vue'
 import Products from '../pages/Poducts.vue'
+import {ref} from 'vue'
+
+let showNav = ref(true);
+
+
+const toggleNav = ()=>{
+
+    showNav.value = !showNav.value
+    console.log(showNav.value)
+
+}
+
+
+
 </script>
 
 <template>
     <main class="overflow-x-hidden">
-        <Nav/>
-        <Carousel/>
+        <Nav  @toggle="toggleNav" :showNav="showNav" />
+        <Carousel @toggle="toggleNav" :showNav ="showNav" />
     </main>
 
 

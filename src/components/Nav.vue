@@ -1,6 +1,16 @@
 <script setup>
+import { ref } from 'vue'
 import blogo from '../assets/blogo.png'
 import wlogo from '../assets/wlogo.png'
+
+let emit = defineEmits(['toggle'])
+
+
+const props = defineProps({
+        showNav : Boolean
+    })
+
+
 
 </script>
 
@@ -9,7 +19,7 @@ import wlogo from '../assets/wlogo.png'
         <nav class="flex justify-between items-center w-11/12 md:w-10/12 mx-auto ">
 
             <div class="w-[10vh] md:w-[20vh]">
-                <img class="w-full" :src="wlogo" alt="">
+                <a href="#home"><img class="w-full" :src="wlogo" alt=""></a>
             </div>
             <ul class="hidden  md:flex space-x-5">
                 <li>News</li>
@@ -19,10 +29,18 @@ import wlogo from '../assets/wlogo.png'
                 <li><a href="#contact">Contact us</a></li>
             </ul>
 
-            <div class="block md:hidden">
-                <i class="fa-solid fa-bars"></i>
+            <div v-if="!showNav" @click="emit('toggle')"  class="block md:hidden  cursor-pointer">
+                <i  class="fa-solid fa-bars"></i>
             </div>
+
+          
+
+
         </nav>
+        
     </section>
+
+
+   
 </template>
 
