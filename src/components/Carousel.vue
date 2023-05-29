@@ -141,7 +141,7 @@
 
     <main class=" sm:hidden  h-screen text-white relative inset-0  right-0 w-screen overflow-x-hidden">
         <video class="object-cover md:hidden h-screen" autoplay muted loop id="myVideo">
-            <source src="src/assets/phoneHero.mp4" type="video/mp4">
+            <source src="../assets/phoneHero.mp4" type="video/mp4">
           </video>
 
           <div v-if="showNav"  class="sm:hidden z-10 w-[50vw] h-screen absolute top-0 right-0 bg-black/80 px-4 overflow-hidden ">
@@ -150,7 +150,7 @@
                     <i class="fa-regular fa-x"></i>
                 </div>
                 <div>
-                    <img src="src/assets/wlogo.png" alt="">
+                    <img src="../assets/wlogo.png" alt="">
                 </div>
                 <div>
                     <ul class="flex flex-col space-y-5 mt-5">

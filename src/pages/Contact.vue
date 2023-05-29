@@ -1,7 +1,7 @@
 <template>
     <main id="contact" class="h-[100vh] overflow-y-hidden text-white relative inset-0  right-0 w-screen grid place-content-center overflow-x-hidden">
         <video class="h-screen w-screen object-cover " autoplay muted loop id="myVideo">
-            <source src="src/assets/contact.mp4" type="video/mp4">
+            <source src="../assets/contact.mp4" type="video/mp4">
           </video>
 
           <section class="bg-black/80 absolute w-screen h-full  items-center justify-center top-0 right-0">
