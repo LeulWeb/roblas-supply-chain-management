@@ -53,7 +53,7 @@ let productsList = [
 
     {
         title: "Spare parts",
-        img: "../assets/spare.jpg",
+        img: "./assets/spare.jpg",
         description: "Ensure seamless operations with our high-quality spare parts. Meticulously crafted for reliability, they keep your machinery running smoothly. Trust in our exceptional selection to minimize downtime and maximize productivity in your industry or company."
     },
 
