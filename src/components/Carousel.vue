@@ -16,12 +16,12 @@
     const emit = defineEmits('toggle')
 
     const images= [
-        "url('./../assets/2.jpg')",
-  "url('./../assets/1.jpg')",
-  "url('./../assets/3.jpg')",
-  "url('./../assets/4.jpg')",
-  "url('./../assets/5.jpg')",
-  "url('./../assets/cars6.jpg')",
+        "url('../assets/2.jpg')",
+  "url('../assets/1.jpg')",
+  "url('../assets/3.jpg')",
+  "url('../assets/4.jpg')",
+  "url('../assets/5.jpg')",
+  "url('../assets/cars6.jpg')",
     ]
 
     const keyWords = [
