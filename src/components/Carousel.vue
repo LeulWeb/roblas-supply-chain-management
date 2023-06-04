@@ -1,8 +1,16 @@
 <script setup>
 
-    import {onUpdated, ref} from 'vue';
+
     import { onMounted } from 'vue';
-    import {gsap} from 'gsap';
+    import { ref } from 'vue';
+
+
+    import image1 from '../assets/1.jpg'
+    import image2 from '../assets/2.jpg'
+    import image3 from '../assets/3.jpg'
+    import image4 from '../assets/4.jpg'
+    import image5 from '../assets/5.jpg'
+    import image6 from '../assets/cars6.jpg'
 
     const props = defineProps({
         showNav : Boolean
@@ -10,70 +18,21 @@
 
 
     let index = ref(0);
-    let word = ref(0);
-    let keyProduct = ref('Cars')
+   
 
     const emit = defineEmits('toggle')
 
     const images= [
-        "url('../assets/2.jpg')",
-  "url('../assets/1.jpg')",
-  "url('../assets/3.jpg')",
-  "url('../assets/4.jpg')",
-  "url('../assets/5.jpg')",
-  "url('../assets/cars6.jpg')",
+        `url(${image3})`, 
+        `url(${image1})`, 
+        `url(${image2})`, 
+        `url(${image4})`, 
+        `url(${image5})`, 
+        `url(${image6})`, 
     ]
 
-    const keyWords = [
-        "Cars",
-        "3 wheel cars",
-        "Security System",
-        "Raw Material for Industry",
-    ]
-
-    // const textElement = ref(null);
-
-    //Working with GSAP
 
 
-
-
-
-
-//     const animateTyping = () => {
-//   const text = "Hello, World!"; // Text to be typed
-//   const duration = 0.05; // Duration for each character to appear
-
-//   gsap.set(textElement.value, { opacity: 1 }); // Set initial opacity to 1
-
-//   gsap.to(text.split(''), {
-//     duration,
-//     delay: 0.5, // Delay before animation starts
-//     opacity: 1,
-//     y: 0,
-//     stagger: duration,
-//     ease: 'power1.in',
-//     overwrite: 'auto',
-//     onUpdate: function () {
-//       textElement.value.innerText = this.targets()[0].textContent; // Update the displayed text
-//     },
-//     onComplete: function () {
-//       console.log('Typing animation completed!');
-//     },
-//   });
-// };
-
-    let animateWord=()=>{
-        setInterval(()=>{
-            if(word.value == keyWords.length-1){
-                word.value= 0;
-            }
-            word.value++
-            console.log(word.value);
-        },5000)
-
-    }
-    
      let startCarousel= ()=>{
         setInterval(()=>{
             if(index.value == images.length-1){
@@ -87,23 +46,6 @@
   
     onMounted(() => {
         startCarousel()
-        // animateWord()
-        // animateTyping()
-        
-    gsap.from(".hero", {opacity: 0, duration: 1});
-    gsap.fromTo(".hero-text",{
-        x : '-100vw',
-        opacity: 0,
-        delay:1,
-        duration:1,
-    },{
-        opacity: 1,
-        x: '100vw',
-        delay: 2,
-        duration: 1,
-        ease: "bounce"
-    })
-
     })
 
 </script>
