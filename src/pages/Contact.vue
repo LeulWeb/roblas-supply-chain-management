@@ -1,5 +1,5 @@
 <template>
-    <main id="contact" class="h-[100vh] overflow-y-hidden text-white relative inset-0  right-0 w-screen grid place-content-center overflow-x-hidden">
+    <main id="contact" class="h-[100vh] overflow-y-hidden text-white relative inset-0  right-0 w-screen grid place-content-center overflow-x-hidden py-12">
         <video class="h-screen w-screen object-cover " autoplay muted loop id="myVideo">
             <source src="../assets/contact.mp4" type="video/mp4">
           </video>
@@ -33,7 +33,7 @@
                 
 
                 <div class="p-2 sm:p-4 rounded-md bg-transparent border-2 shadow-md mt-2 md:mt-6 order-2 md:order-1 w-[100%]  md:w-[40%]">
-                    <form action="https://formsubmit.co/pro.leul.webshet@gmail.com" class="text-black w-full" method="POST">
+                    <form action="https://formsubmit.co/pro.leul.webshet@gmail.com" class="text-black w-full " method="POST">
                         <label>
                             
                             <input class="border-b-2 bg-transparent border-white p-2 enabled:outline-none w-full" type="text" placeholder="Full Name" required name="name">
@@ -44,7 +44,7 @@
                         </label>
                         <br>
                         <label >
-                            <textarea class=" bg-transparent  enabled:outline-none rounded-md my-2 p-2 w-full text-white" name="message" id="" cols="25" rows="10" required>What should we discuss ?....</textarea >
+                            <textarea class=" bg-transparent  enabled:outline-none rounded-md my-2 p-2 w-full text-white" name="message" id="" cols="25" rows="1" required>What should we discuss ?....</textarea >
                         </label>
                         <button class="bg-indigo-600 rounded-md py-4 text-lg w-full text-white" type="submit">Send</button>
                     </form>
