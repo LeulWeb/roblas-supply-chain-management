@@ -4,7 +4,7 @@ import Carousel from '../components/Carousel.vue'
 import Products from '../pages/Poducts.vue'
 import {ref} from 'vue'
 
-let showNav = ref(true);
+let showNav = ref(false);
 
 
 const toggleNav = ()=>{

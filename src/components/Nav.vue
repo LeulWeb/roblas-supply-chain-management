@@ -18,7 +18,7 @@ const props = defineProps({
     <section class="fixed w-screen backdrop-blur-2xl bg-black/50 top-0 z-10 p-5 md:p-7 text-white">    
         <nav class="flex justify-between items-center w-11/12 md:w-10/12 mx-auto ">
 
-            <div class="w-[10vh] md:w-[20vh]">
+            <div class="w-[30vw] md:w-[20vw]">
                 <a href="#home"><img class="w-full" :src="wlogo" alt=""></a>
             </div>
             <ul class="hidden  md:flex space-x-5">

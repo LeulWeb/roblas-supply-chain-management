@@ -88,7 +88,7 @@
 
           <div v-if="showNav"  class="sm:hidden z-10 w-[50vw] h-screen absolute top-0 right-0 bg-black/80 px-4 overflow-hidden ">
             <div class="flex flex-col items-start h-full justify-start py-4">
-                <div  @click="emit('toggle')"  class="block md:hidden self-end cursor-pointer my-10">
+                <div  @click="emit('toggle')"  class="block md:hidden self-end cursor-pointer mx-7 my-10">
                     <i class="fa-regular fa-x"></i>
                 </div>
                 <div>
