@@ -25,7 +25,7 @@ const props = defineProps({
                 <li>News</li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#feature">Feature</a></li>
-                <li>About us</li>
+                <!-- <li>About us</li> -->
                 <li><a href="#contact">Contact us</a></li>
             </ul>
 
