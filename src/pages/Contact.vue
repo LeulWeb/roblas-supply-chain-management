@@ -33,14 +33,14 @@
                 
 
                 <div class="p-2 sm:p-4 rounded-md bg-transparent border-2 shadow-md mt-2 md:mt-6 order-2 md:order-1 w-[100%]  md:w-[40%]">
-                    <form action="https://formsubmit.co/pro.leul.webshet@gmail.com" class="text-black w-full " method="POST">
+                    <form action="https://formsubmit.co/contact@roblassupplychain.com" class="text-black w-full " method="POST">
                         <label>
                             
-                            <input class="border-b-2 bg-transparent border-white p-2 enabled:outline-none w-full" type="text" placeholder="Full Name" required name="name">
+                            <input class="border-b-2 bg-transparent border-white p-2 enabled:outline-none text-white w-full" type="text" placeholder="Full Name" required name="name">
                         </label>
                         <br>
                         <label>
-                            <input class="border-b-2 bg-transparent border-white p-2 enabled:outline-none w-full" type="text" placeholder="your email" required name="email">
+                            <input class="border-b-2 bg-transparent border-white p-2 enabled:outline-none text-white w-full" type="text" placeholder="your email" required name="email">
                         </label>
                         <br>
                         <label >

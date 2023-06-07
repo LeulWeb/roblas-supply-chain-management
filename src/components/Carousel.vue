@@ -83,10 +83,10 @@
 
     <main class=" sm:hidden  h-screen text-white relative inset-0  right-0 w-screen overflow-x-hidden">
         <video class="object-cover md:hidden h-screen" autoplay muted loop id="myVideo">
-            <source src="../assets/phoneHero.mp4" type="video/mp4">
+            <source class="w-screen h-full" src="../assets/phoneHero.mp4" type="video/mp4">
           </video>
 
-          <div v-if="showNav"  class="sm:hidden z-10 w-[50vw] h-screen absolute top-0 right-0 bg-black/80 px-4 overflow-hidden ">
+          <div v-if="showNav"  class="sm:hidden z-10 w-[50vw] h-screen fixed top-0 right-0 bg-black/80 px-4 overflow-hidden ">
             <div class="flex flex-col items-start h-full justify-start py-4">
                 <div  @click="emit('toggle')"  class="block md:hidden self-end cursor-pointer mx-7 my-10">
                     <i class="fa-regular fa-x"></i>

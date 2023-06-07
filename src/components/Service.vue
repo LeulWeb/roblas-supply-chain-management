@@ -82,7 +82,9 @@
 </div>
    <section class="w-screen bg-black">
    
-    <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=14.765625000000002%2C-16.46769474828897%2C149.41406250000003%2C66.08936427047088&amp;layer=mapnik" style=" pointer-events: none;"></iframe>
+    <!-- <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=14.765625000000002%2C-16.46769474828897%2C149.41406250000003%2C66.08936427047088&amp;layer=mapnik" style=" pointer-events: none;"></iframe> -->
+
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27140804.57148677!2d82.73514444052054!3d33.86166168190994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1686125184454!5m2!1sen!2set" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <div class="w-11/12 md:w-10/12 mx-auto flex justify-between py-10">
             <p class="font-bold text-lg md:text-2xl uppercase text-white">Africa</p>
